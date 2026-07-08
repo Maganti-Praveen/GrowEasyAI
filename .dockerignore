@@ -1,0 +1,12 @@
+node_modules
+.env
+.env.local
+.git
+frontend/.next
+frontend/out
+backend/dist
+*.md
+samples
+.gitignore
+docker-compose.yml
+render.yaml
