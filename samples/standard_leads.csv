@@ -1,0 +1,9 @@
+name,email,mobile_without_country_code,country_code,company,city,state,country,lead_owner,crm_status,crm_note,data_source,possession_time,created_at
+Rahul Sharma,rahul.sharma@gmail.com,9876543210,+91,Tata Consultancy,Bangalore,Karnataka,India,Priya Mehta,GOOD_LEAD_FOLLOW_UP,Interested in 3BHK premium unit,leads_on_demand,2026-12,2026-05-10 09:30:00
+Ananya Reddy,ananya.r@outlook.com,8765432109,+91,Infosys Ltd,Hyderabad,Telangana,India,Vikram Singh,SALE_DONE,Booked Unit 1204 on 5th May,,2026-06,2026-05-12 14:15:00
+Michael Chen,m.chen@techcorp.com,4155551234,+1,TechCorp Inc,San Francisco,California,USA,Priya Mehta,DID_NOT_CONNECT,Called twice - voicemail both times,meridian_tower,,2026-05-14 11:00:00
+Priya Nair,,9123456780,+91,,Kochi,Kerala,India,Ankit Desai,GOOD_LEAD_FOLLOW_UP,Walk-in enquiry for ground floor,eden_park,2027-03,2026-05-15 16:45:00
+James Wilson,j.wilson@email.com,2025559876,+1,GlobalTech,New York,New York,USA,Vikram Singh,BAD_LEAD,Wrong number - disconnected,,,,2026-05-16 10:20:00
+Deepika Patel,deepika.p@yahoo.com,7890123456,+91,Wipro,Pune,Maharashtra,India,Priya Mehta,GOOD_LEAD_FOLLOW_UP,Wants site visit next weekend,sarjapur_plots,2026-09,2026-05-18 08:30:00
+,no_name@test.com,,,Unknown Corp,,,India,Ankit Desai,BAD_LEAD,No name provided - junk lead,,,2026-05-20 12:00:00
+Karthik Iyer,karthik.iyer@gmail.com,,+91,Self Employed,Chennai,Tamil Nadu,India,Vikram Singh,GOOD_LEAD_FOLLOW_UP,Budget: 80L-1Cr. Preferred: East facing,varah_swamy,2027-06,2026-05-22 09:00:00
