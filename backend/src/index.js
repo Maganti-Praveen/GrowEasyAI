@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const logger = require('./utils/logger');
@@ -23,8 +24,18 @@ app.get('/api/health', (_req, res) => {
   });
 });
 
-// Routes
+// API routes
 app.use('/api', importRoutes);
+
+// Serve frontend static build (Next.js export output)
+const frontendPath = path.join(__dirname, '../../frontend/out');
+app.use(express.static(frontendPath));
+
+// SPA fallback — serve index.html for any non-API route
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api')) return next();
+  res.sendFile(path.join(frontendPath, 'index.html'));
+});
 
 // Global error handler
 app.use((err, _req, res, _next) => {
@@ -50,6 +61,7 @@ app.listen(PORT, () => {
       : isValid(process.env.GOOGLE_AI_API_KEY)
         ? 'Gemini Flash'
         : 'NONE — set an API key!';
-  logger.info(`GrowEasy CRM Importer backend running on port ${PORT}`);
+  logger.info(`GrowEasy CRM Importer running on port ${PORT}`);
   logger.info(`AI provider: ${aiProvider}`);
+  logger.info(`Frontend: serving from ${frontendPath}`);
 });

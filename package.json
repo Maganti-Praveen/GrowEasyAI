@@ -1,0 +1,8 @@
+{
+  "name": "groweasy-crm-importer",
+  "private": true,
+  "scripts": {
+    "render-build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "dev": "echo \"Run backend and frontend separately — see README.md\""
+  }
+}
